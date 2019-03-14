@@ -1,0 +1,6 @@
+<h2><%=@song.name%></h2>
+<h3><%=@song.artist.name%></h3>
+<% @song.genres.each do |g| %>
+  <h4><%= g.name %></h4>
+<% end %>
+<h5>Successfully created song.</h5>
