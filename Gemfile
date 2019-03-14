@@ -8,11 +8,13 @@ gem 'require_all'
 gem 'sqlite3', '~> 1.3.6'
 gem 'thin'
 gem 'shotgun'
+gem 'rack-flash3'
 gem 'pry'
 
 group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'rack-test'
+  gem 'rack-flash3'
   gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 end

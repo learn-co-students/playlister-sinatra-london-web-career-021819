@@ -6,6 +6,10 @@
   </head>
   <body>
 
+    <% if flash.has?(:message) %>
+  <%= flash[:message] %>
+<% end %>
+
     <h3><%= @song.name %></h3>
     <a href="/artists/<%= @song.artist.slug %>"><h4><%= @song.artist.name %></h4></a>
     <p>Song's genre/s:</p>
