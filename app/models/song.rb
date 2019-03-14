@@ -4,7 +4,6 @@ class Song < ActiveRecord::Base
   has_many :song_genres
 
   def slug
-
       Slug.slug(self.name)
   end
 
